@@ -51,7 +51,11 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     console.log(dayCheck.checked);
 
-
+    const mainVideo =  document.querySelector('.video1');
+    const iframeV =  document.querySelector('iframe');
+    mainVideo.addEventListener('click', () => {
+        iframeV.style.display = 'block';
+    })
 
 
     // 헤더 변수
